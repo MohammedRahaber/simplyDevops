@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome!!!!</h1>
+    <h1 style="text-align: center;">Welcome!!!!</h1>
+    <script>
+        var a=[{name:'rahaber',age:12},{name:'saqlian',age:55},{name:'rahaber',age:66},
+        {name:'naaz',age:55}]
+        localStorage.setItem('name',JSON.stringify(a))
+var data=JSON.parse(localStorage.getItem("name"));
+
+     var my=  data.find(name=>name.name=="rahaber")
+     console.log(my)
+    </script>
 </body>
 </html>
